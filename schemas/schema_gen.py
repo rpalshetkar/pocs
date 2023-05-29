@@ -186,6 +186,7 @@ def bootstrapper():
             ('Workflows', 'GRID', {'XPATH': 'xWorkflows'}),
             ('Approvals', 'GRID', {'XPATH': 'xApprovals', 'ROWS': 1}),
             ('Is Encrypted', 'SWITCH'),
+            ('Register Repo', 'SWITCH'),
             ('Minimized', 'JSON'),
             ('Maximized', 'JSON'),
             ('Validators', 'GRID', {'XPATH': 'xCallables'}),
@@ -204,13 +205,17 @@ def bootstrapper():
             ('Milestone', 'TEXT', {'LENGTH': 40}),
         ],
         'xPeople': [
-            ('Milestone', 'TEXT', {'LENGTH': 40}),
+            ('Alias', 'TEXT', {'LENGTH': 40}),
         ],
         'xReleases': [
-            ('Milestone', 'TEXT', {'LENGTH': 40}),
+            ('CRQ', 'TEXT', {'LENGTH': 40}),
+            ('Date Planned', 'TEXT', {'LENGTH': 40}),
         ],
-
-
+        'xAITs': [
+            ('Alias', 'TEXT', {'LENGTH': 40}),
+            ('Application', 'NUMERIC'),
+            ('AIT Number', 'NUMERIC'),
+        ],
     }
 
 
