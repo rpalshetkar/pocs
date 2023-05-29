@@ -1,0 +1,65 @@
+Need python code to perform the following
+
+These are the capabilities => Trade Capture, FO Risk, Order Management, Auctions, Settlement, Sub Ledger, Market Risk
+
+each entity in general trades in following asset classes and products 
+this is asset to product class map
+FX has ['Spots', 'Forwards', 'FX Options', 'NDF', 'Swaps'], 
+Bonds has ['Govt', 'Corp']
+FNO ['Bond Futures', 'Euro Futures', 'FX Futures'],  
+Rates Derivatives has ['Swaps', 'CCS', 'NDIRS', 'MTM', 'TRS', 'Bond Forwards']
+Repos has ['Term Repos', 'Short Term Repos'], 
+Loans/Deposits have ['Corp', 'Treasury'] 
+
+
+each entity can trade in certain currencies and products. So there is what is allowed trade called apl. This is the apl.csv to be read
+create a function to do this below
+entity,asset_class,product,currencies
+India,FX,Spots
+India,FX,Forwards
+India,FX,Swaps
+India,FX,FX Options
+India,Bonds,Govt,INR
+India,FNO,Bond Futures,INR
+India,FNO,FX Futures,INR
+India,Rates Derivatives,Swaps
+India,Rates Derivatives,CCS
+India,Rates Derivatives,Bond Forwards
+Indonesia,FX
+Indonesia,Bonds,Govt
+Indonesia,Rates Derivatives,Swaps
+Indonesia,Rates Derivatives,CCS
+Indonesia,Loans/Deposits,,IDR
+
+now for each entity I have system map in infra.csv
+create a function to read this below
+capability,entity,asset_class,product,system,score
+Trade Management,,FX,,Sierra,80
+Trade Management,,Bonds,,Bloomberg,80
+Trade Management,,FNO,,Bloomberg,80
+Trade Management,,Rates Derivatives,,VMASTER,80
+Trade Management,,Exotics,,ORCA,80
+Trade Management,,Repos,,Bloomberg,80
+Trade Management,,FX,FX Options,QZ Deal Manager,100
+FO Risk,,,,BRISK,100
+Market Risk,,,,MRS,80
+Settlement,,,,Cashman,100
+Sub Ledger,,,,FinMan,100
+Sub Ledger,,Bonds,,EBAR,100
+Sub Ledger,,FNO,,GMI,100
+Order Management,India,FX,Spots,Reuters,100
+Order Management,India,FX,Forwards,Reuters,100
+Order Management,India,FX,Spots,CCIL,100
+Order Management,India,FX,Forwards,CCIL,100
+Order Management,India,Bonds,,CCIL,100
+Auctions,India,Bonds,,EKuber,100
+Settlement,India,FX,,GBS,50
+Settlement,Indonesia,,,BIB,100
+Trade Management,IndonesiaX,FX,,BIB,80
+Trade Management,IndonesiaX,Bonds,,BIB,80
+Trade Management,IndonesiaX,Rates Derivatives,,BIB,80
+
+now for each row in apl.csv
+    for each capability
+        find closest match for entity,asset_class, product in infra.csv where wild card if blank in infra.csv should be shown
+        print the row and match score

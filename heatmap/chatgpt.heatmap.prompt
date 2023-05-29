@@ -1,0 +1,94 @@
+'''
+ChatGPT Spec
+------------
+I have following data frames in python
+countries => India, china, Indonesia, singapore
+capabilities => Trade Capture, Front Office Risk, Order Management, Settlement, Subledger, Market Risk Management
+asset classes and products =>
+FX has ['Spots', 'Forwards', 'FX Options', 'NDF', 'Swaps'] where we use FXS as the system,
+FNO ['Bond Futures', 'Euro Futures', 'FX Futures'] where we use BND as the system,
+Bonds has ['Govt', 'Corp'] we use BND as system,
+Rates Derivatives has ['Swaps', 'CCS', 'NDIRS', 'MTM', 'TRS'] where we use RDS as system,
+Repos has ['Term Repos', 'Short Term Repos'],
+Loans/Deposits have ['Corp', 'Treasury'] and we use FNDS as system
+score => Scores a random number between 0 to 100 with just tens.
+overrides => For FX Options we use FXO as system for Term Repos we use LTR as system and for Short Term we use BND as system.
+Use the default system for other products as provided in asset classes and products. For settlements; Rates Derivatives we use RDCS
+For India all settlement except for FX Options and Derivatives is done in INSTL
+For all products in system BND subledger is BNDSL
+Countries like Indonesia all systems except for risk is IDBOX
+All have Front office risk in FOS
+All have Market risk in MRS
+
+With these data frame right random function which can generate the data frame which has
+permutation combination of these fields where data frame has country, capability,
+asset class, products, system and score. Write the function in python.
+'''
+
+import pandas as pd
+import numpy as np
+
+
+def generate_data(n):
+    # Define the data frames
+    countries = ['India', 'China', 'Indonesia', 'Singapore']
+    capabilities = ['Trade Capture', 'Front Office Risk', 'Order Management', 'Settlement', 'Subledger', 'Market Risk Management']
+    asset_classes = {
+        'FX': ['Spots', 'Forwards', 'FX Options', 'NDF', 'Swaps'],
+        'FNO': ['Bond Futures', 'Euro Futures', 'FX Futures'],
+        'Bonds': ['Govt', 'Corp'],
+        'Rates Derivatives': ['Swaps', 'CCS', 'NDIRS', 'MTM', 'TRS'],
+        'Repos': ['Term Repos', 'Short Term Repos'],
+        'Loans/Deposits': ['Corp', 'Treasury']
+    }
+    systems = {
+        'FX': 'FXS',
+        'FNO': 'BND',
+        'Bonds': 'BND',
+        'Rates Derivatives': 'RDS',
+        'Repos': 'BND',
+        'Loans/Deposits': 'FNDS'
+    }
+    overrides = {
+        'FX Options': 'FXO',
+        'Term Repos': 'LTR',
+        'Short Term Repos': 'BND'
+    }
+    subledgers = {
+        'BND': 'BNDSL',
+        'FNDS': 'FMSL',
+        'RDS': 'FMSL',
+        'FXS': 'FXSL',
+        'IDBOX': 'IDBOX'
+    }
+    settlements = {
+        'India': {
+            'FX Options': 'INSTL',
+            'Rates Derivatives': 'INSTL'
+        },
+        'Indonesia': {
+            'FX Options': 'IDBOX',
+            'Rates Derivatives': 'IDBOX'
+        },
+    }
+
+    # Generate the data frame
+    data = []
+    for _ in range(n):
+        country = np.random.choice(countries)
+        capability = np.random.choice(capabilities)
+        asset_class = np.random.choice(list(asset_classes.keys()))
+        product = np.random.choice(asset_classes[asset_class])
+        system = systems[asset_class]
+        if product in overrides:
+            system = overrides[product]
+        subledger = subledgers[system]
+        if country in settlements and product in settlements[country]:
+            settlement = settlements[country][product]
+        else:
+            settlement = ''
+        score = np.random.randint(0, 11) * 10
+        data.append([country, capability, asset_class, product, system, subledger, settlement, score])
+
+    columns = ['Country', 'Capability', 'Asset Class', 'Product', 'System', 'Subledger', 'Settlement', 'Score']
+    return pd.DataFrame(data, columns=columns)

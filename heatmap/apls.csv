@@ -1,0 +1,37 @@
+Entity,Asset Class,Products,Currencies
+Australia,Bonds,"Govt"
+Australia,FNO,"ED,EFPs"
+Australia,Rates,"IRS,CCS",
+China,Bonds,"Govt"
+China,FX,"Spots,Forwards,Swaps,NDS",
+China,Rates,"IRS,CCS,NDIRS,CIRO,VIRO"
+Hong Kong,Bonds,Govt,"KRW,CNY"
+Hong Kong,Rates,"IRS,BFWD","KRW,CNY"
+India,Bonds,Govt,INR
+India,FNO,"Bond, FX",INR
+India,FX,"Spots,Forwards,Swaps,Options",
+India,Rates,"IRS,CCS,BFWD",INR
+Indonesia,Bonds,Govt
+Indonesia,FX,"Spots,Forwards,Swaps,NDFs",
+Indonesia,Treasury,"Loans,Deposits",IDR
+Indonesia,Rates,"IRS,CCS"
+Japan,Bonds,"Govt"
+India,FNO,"Bond, FX",INR
+Japan,FX,"Spots,Forwards,Swaps",
+Japan,Rates,"IRS,CCS,CIRO,VIRO",
+Korea,Bonds,"Govt"
+Korea,FX,"Spots,Forwards,Swaps,NDFs,Options",
+Korea,Rates,"IRS,CCS,NDIRS,CIRO,VIRO"
+Malaysia,FX,"Spots,Forwards,Swaps,TFX",
+Malaysia,Rates,"IRS,CCS"
+Global,FX,"Spots,Forwards,NDFs,Swaps,Options,TFX,CFXO"
+Global,Bonds,"Govt"
+India,FNO,"ED, FX",INR
+Global,Rates,"IRS,CCS,NDIRS,TRS,BFWD,VIRO,CIRO"
+Global,Repos,"TERM,SHORT"
+Singapore,Bonds,"Govt"
+Singapore,FX,"Spots,Forwards,Swaps,NDFs",
+Singapore,Rates,"IRS,CCS,NDIRS,TRS,BFWD",
+Taiwan,Bonds,"Govt"
+Taiwan,FX,"Spots,Forwards,Swaps",
+Taiwan,Rates,"IRS,CCS"
