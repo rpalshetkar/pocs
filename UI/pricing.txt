@@ -44,6 +44,7 @@ User Configuration
         Pricing and Greeks (Pre Trade Pricing and Risk systems tolerance checks)
         Non economic Indicatives 
         STP Failuers and Alerts
+    - Column/Value number formats support for UI
 
 
 TOP HEADER
@@ -79,4 +80,7 @@ MARKET DATA and RISK BREAKDOWN
 RISK OUTPUT PROTOCOL
 ====================
     Translations defined via risk.yaml
+    Blotter Trade Indicatives
+    AND 
     Currency, Instrument, Measure, X1, X2, M1, M2, S1, S2, T1, T2
+    Summary on Left Panel (Configurable layout per user), dimension/pivot
