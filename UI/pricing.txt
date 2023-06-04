@@ -1,0 +1,82 @@
+PRICING ENVIRONMENTS
+====================
+    Desk Level Pricing Environment (Prod/Dev/Parallel coexisting)
+    Per Linear Desk (Or common standard Asia)
+
+INSTRUMENT/CCY GRID TEMPLATES
+=============================
+    Exception based (Asia first and minimal override)
+    IRS
+    NRIRS
+    CCS
+    TBS
+    Custom Swaps
+    Compressions
+    Precanned What IF Instruments at SOD in Pricing and Risk
+
+
+User Configuration
+===================
+    - Theme
+    - Favorites (Product templates, Ccys supported)
+    - Listen on Events (pricing requests/Notifications on)
+    - Default pricing Envionment
+    - Default booking Environment
+    - Trade Recap Email Recipients
+    - Trade Recap Fields
+    - Send to What If
+    - User shortcuts (Column/row/Cell context)
+    - Translations (Screen to Technology request, Tech Response to Screen)
+    - Heading per section
+        Trade Blotter Mini Echonomic fields
+        Booking fields Mini and max box (Book, Cpty, Pop up Additional fields for booking)
+    - Column orders in Trade/Row
+        Economic Indicatives
+        Book indicatives
+        Greeks order
+            By Instrument
+            By Brokers
+            By Greek Type
+    - Skew editing capability/Provide Skew to curves to Edit (For future use)
+    - Compressions to WHAT IF Risk Pre-Trade and Match to Post Trade in Risk
+    - Perform enhanced matching between Booking system and Blotter
+        Economic Indicatives
+        Pricing and Greeks (Pre Trade Pricing and Risk systems tolerance checks)
+        Non economic Indicatives 
+        STP Failuers and Alerts
+
+
+TOP HEADER
+==========
+    Pricing Environment (if overwritten/custom show red)
+    Notification (Refresh/Get New compressions)
+    Support (Email dump for L3)
+    Calculators Choice => JSCC/Meitan/Totan/Intraday/EOD
+    Greeks Choices => PV, XVA, DV01, TB01, XDV01, VEGA, FX DELTA
+
+TRADE BLOTTERING
+================
+    Pre Trade Blotter Sheets (Tabs Support, user defined)
+        - Precanned Trades standard Instruments
+        - Compressions Sheets
+        - Single ticket trades
+        - Adjustment trades for WHAT IFs to adjust BRISK RISK
+    Expandable/Collapsible Columns and Rows
+    Expandable +- (Compressions)
+    Trade Click, Expandable Custom view (On Row click)
+    Selected Row Sums on BREAKDOWN BELOW
+    Selected Cells Sums Feature
+    Popped out window
+
+MARKET DATA and RISK BREAKDOWN
+==============================
+    Curve Skew Publish (Store Mechanism for Future use)
+    Editable Curve Points (Curve/Spread for Future use)
+    Summary on Left Panel (Configurable layout per user)
+    Right Panel => Expandable on Right (1D/2D Table or Scalar pivoted on results)
+    Popped out window support
+
+RISK OUTPUT PROTOCOL
+====================
+    Translations defined via risk.yaml
+    Currency, Instrument, Measure, X1, X2, M1, M2, S1, S2, T1, T2

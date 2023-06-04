@@ -18,18 +18,33 @@ def main():
         'xWorkflows',
         'xSchemas',
         'xRepos',
+        'xBOW',
     ]
     for schema in schemas:
         xref = core['xTables'][schema]
         sch = mini_spec(xref, core)
-        dumper(sch)
-        input('Press any key to continue')
+        #dumper(sch)
+        normalized = []
+        count = 1
+        for fld in sorted(sch, key=lambda x: x.get('sort_order') or 0):
+            if (fld.get('collapsed') or fld.get('rows', 0) == 1) and fld.get('fields'):
+                for nested in fld['fields']:
+                    nested['sort_order'] = count
+                    normalized.append(nested)
+                    count += 1
+            else:
+                fld['sort_order'] = count
+                normalized.append(fld)
+                count += 1
+        dumper(normalized)
+        #input('Press any key to continue')
 
 
 def field_refs(schema):
     fields = []
+    order = 1
     for fld in schema:
-        xref = {'header': fld, 'type': 'TEXT'}
+        xref = {'header': fld, 'type': 'TEXT', 'sort_order': order}
         if isinstance(fld, tuple):
             assert len(fld) >= 2, 'Tuple is not constructed right'
             xref['header'] = fld[0]
@@ -39,7 +54,9 @@ def field_refs(schema):
             if xref['type'] == 'GRID' and xref['xpath'] != 'xApprovals':
                 xref['approvals']=False
         if xref['type'] != 'UNSUPPORTED':
+            xref['sort_order'] = order
             fields.append(xref)
+            order += 1
     return fields
 
 
@@ -50,8 +67,12 @@ def dumper(ref):
 def mini_spec(fields, core):
     specs = []
     for xref in fields:
-        if spec := core['xMappers'][xref['type']](xref, core):
-            specs.append(spec)
+        fn = core['xMappers'][xref['type']]
+        dref = {}
+        dref |= xref
+        if spec := fn(xref, core):
+            dref.update(spec)
+            specs.append(dref)
     return specs
 
 
@@ -82,6 +103,8 @@ def mini_grid(fld, core):
     #[i for i in [mini_spec(k, core) for k in xpath] if i]
     if not fld.get('approval'):
         flds = [i for i in flds if i['header'] != 'Approvals']
+        for xref in flds:
+            xref['parent'] = fld['header']
     return {'header': fld['header'], 'fields': flds}
 
 
@@ -201,21 +224,147 @@ def bootstrapper():
             'ENUM': mini_enum,
             'URI': mini_uri,
         },
+        'xTasks': [
+            'Milestone',
+            'Priority',
+        ],
         'xBOW': [
-            ('Milestone', 'TEXT', {'LENGTH': 40}),
+            ('Parent', 'GRID', {'XPATH': 'xTasks', 'COLLAPSED': True}),
+            ('Tasks', 'GRID', {'XPATH': 'xTasks'}),
         ],
         'xPeople': [
-            ('Alias', 'TEXT', {'LENGTH': 40}),
+            ('Alias', 'TEXT', {'LENGTH': 8}),
+            ('PID', 'TEXT', {'LENGTH': 20}),
         ],
         'xReleases': [
-            ('CRQ', 'TEXT', {'LENGTH': 40}),
-            ('Date Planned', 'TEXT', {'LENGTH': 40}),
+            'Date Planned',
+            'Type'
+            'Window Start',
+            'Window End',
+            'LOB',
+            'CRQ',
+            'Description',
+            'Regulatory Material',
+            'Lead',
+            ('Approvals', 'GRID', {'XPATH': 'xApprovals', 'ROWS': 1}),
         ],
         'xAITs': [
             ('Alias', 'TEXT', {'LENGTH': 40}),
             ('Application', 'NUMERIC'),
             ('AIT Number', 'NUMERIC'),
         ],
+        'xTables': [
+            {
+                'PATH': '/CORE/REGISTRY/Enumerations',
+                'SCHEMA': 'Enumerations',
+                'XREF': 'xEnumerations',
+            },
+            {
+                'PATH': '/CORE/REGISTRY/Callables',
+                'SCHEMA': 'Callables',
+                'XREF': 'xCallables',
+            },
+            {
+                'PATH': '/CORE/REGISTRY/IAM',
+                'SCHEMA': 'IAM',
+                'XREF': 'xIAM',
+            },
+            {
+                'PATH': '/CORE/REGISTRY/xSchemas',
+                'SCHEMA': 'xSchemas',
+                'XREF': 'xSchemas',
+            },
+            {
+                'PATH': '/CORE/REGISTRY/Repos',
+                'SCHEMA': 'Repos',
+                'XREF': 'xRepos',
+            },
+            {
+                'PATH': '/ORG/People',
+                'SCHEMA': 'People',
+                'XREF': 'xPeople',
+            },
+            {
+                'PATH': '/ORG/BOW',
+                'SCHEMA': 'BOW',
+                'XREF': 'xBOW',
+            },
+            {
+                'PATH': '/ORG/Funding',
+                'SCHEMA': 'Funding',
+                'XREF': 'xFunding',
+            },
+            {
+                'PATH': '/ORG/P2P',
+                'SCHEMA': 'P2P',
+                'XREF': 'xP2P',
+            },
+            {
+                'PATH': '/ORG/Metrics',
+                'SCHEMA': 'Metrics',
+                'XREF': 'xMetrics',
+            },
+            {
+                'PATH': '/ORG/Bookmarks',
+                'SCHEMA': 'Bookmarks',
+                'XREF': 'xBookmarks'
+            },
+            {
+                'PATH': '/PLATFORMS/Applications',
+                'SCHEMA': 'Applications',
+                'XREF': 'xAIT',
+            },
+            {
+                'PATH': '/PLATFORMS/Products',
+                'SCHEMA': 'Products',
+                'XREF': 'xProducts',
+            },
+            {
+                'PATH': '/PLATFORMS/APLS',
+                'SCHEMA': 'APL',
+                'XREF': 'xAPL',
+            },
+            {
+                'PATH': '/PLATFORMS/Capabilities',
+                'SCHEMA': 'Capabilities',
+                'XREF': 'xCapabilities',
+            },
+            {
+                'PATH': '/PLATFORMS/Schedulers',
+                'SCHEMA': 'Schedulers',
+                'XREF': 'xScheduler',
+            },
+            {
+                'PATH': '/PLATFORMS/Notifications',
+                'SCHEMA': 'Schedulers',
+                'XREF': 'xScheduler',
+            },
+            {
+                'PATH': '/PLATFORMS/Postman',
+                'SCHEMA': 'Schedulers',
+                'XREF': 'xMailman',
+            },
+            {
+                'PATH': '/PLATFORMS/Reports',
+                'SCHEMA': 'Reports',
+                'XREF': 'xReports',
+            },
+            {
+                'PATH': '/PLATFORMS/Translations',
+                'SCHEMA': 'Translations',
+                'XREF': 'xTranslations',
+            },
+            {
+                'PATH': '/PLATFORMS/EndPoints',
+                'SCHEMA': 'API End Points',
+                'XREF': 'xAPI',
+            },
+            {
+                'PATH': '/PLATFORMS/Taxonomies',
+                'SCHEMA': 'Taxonomy',
+                'XREF': 'xTaxonomies'
+            },
+        ]
     }
 
 
