@@ -24,11 +24,13 @@ def main():
     for schema in schemas:
         xref = core['xTables'][schema]
         sch = mini_spec(xref, core)
-        #dumper(sch)
+        # dumper(sch)
         normalized = []
         count = 1
         for fld in sorted(sch, key=lambda x: x.get('sort_order') or 0):
-            if (fld.get('collapsed') or fld.get('rows', 0) == 1) and fld.get('fields'):
+            if (fld.get('collapsed') or fld.get('rows', 0) == 1) and fld.get(
+                'fields'
+            ):
                 for nested in fld['fields']:
                     nested['sort_order'] = count
                     normalized.append(nested)
@@ -37,8 +39,18 @@ def main():
                 fld['sort_order'] = count
                 normalized.append(fld)
                 count += 1
-        dumper(normalized)
-        #input('Press any key to continue')
+            if len(normalized):
+                mini = minimized(normalized)
+                dumper(mini)
+                # input('Press any key to continue')
+
+
+def minimized(schema):
+    mini = sorted(schema, key=lambda x: x['sort_order'])
+    for fld in mini:
+        if fld.get('fields'):
+            fld['fields'] = minimized(fld['fields'])
+    return mini
 
 
 def field_refs(schema):
@@ -53,7 +65,7 @@ def field_refs(schema):
             if len(fld) >= 3:
                 xref |= {k.lower(): v for k, v in fld[2].items()}
             if xref['type'] == 'GRID' and xref['xpath'] != 'xApprovals':
-                xref['approvals']=False
+                xref['approvals'] = False
         if xref['type'] != 'UNSUPPORTED':
             xref['sort_order'] = order
             fields.append(xref)
@@ -82,10 +94,11 @@ def mini_enum(fld, _):
         fld['label'] = 'Acronym, Description'
         fld['value'] = 'Acronym'
     if fld.get('xpath'):
-        assert False, "XPATH for Enumeration for {fld['header']} not supported"
+        # assert False, 'XPATH for Enumeration for {fld['header']} not supported'
         # TODO, Make a call to repo and get right columns using field COLUMNS dynamically REPO Registered
         # fld['label'] = 'Column1 , Column2'
         # fld['value'] = 'Column1'
+        pass
     return fld
 
 
@@ -101,7 +114,6 @@ def mini_grid(fld, core):
         assert xpath, f'Nested specfication {pth} not provided'
     assert xpath, 'Grid or Nested specfication not provided'
     flds = mini_spec(xpath, core)
-    #[i for i in [mini_spec(k, core) for k in xpath] if i]
     if not fld.get('approval'):
         flds = [i for i in flds if i['header'] != 'Approvals']
         for xref in flds:
@@ -122,11 +134,11 @@ def mini_uri(fld, _):
 
 
 def uri_validator(uri):
-    protocols=['http', 'https', 'txform', 'qzt', 'csv', 'xls', 'file']
-    sep='://'
-    has_protocol=re.search(sep, uri)
+    protocols = ['http', 'https', 'txform', 'qzt', 'csv', 'xls', 'file']
+    sep = '://'
+    has_protocol = re.search(sep, uri)
     assert has_protocol, f'Protocol not seen in URI {uri}'
-    protocol, uri=uri.split(sep)
+    protocol, uri = uri.split(sep)
     assert protocol in protocols, f'Unsupported Protocol {protocol} URI {uri}'
     return True
 
@@ -181,6 +193,13 @@ def bootstrapper():
             ('Approvals', 'GRID', {'XPATH': 'xApprovals'}),
             ('Side Effects', 'GRID', {'XPATH': 'xCallables'}),
         ],
+        'xCapabilities': [
+            'Capability',
+            'Description',
+            ('Unit', 'ENUM', {'PATH': '/CORE/UNIT'}),
+            'Measure',
+            ('Value', 'NUMERIC'),
+        ],
         'xFields': [
             'Column',
             ('Order', 'NUMERIC'),
@@ -225,13 +244,10 @@ def bootstrapper():
             'ENUM': mini_enum,
             'URI': mini_uri,
         },
-        'xTasks': [
-            'Milestone',
-            'Priority',
-        ],
+        'xTasks': ['Milestone', 'Priority'],
         'xBOW': [
             ('Tasks', 'GRID', {'XPATH': 'xTasks'}),
-            ('Parent', 'GRID', {'XPATH': 'xTasks', 'COLLAPSED': True}),
+            ('Epic', 'GRID', {'XPATH': 'xTasks', 'COLLAPSED': True}),
         ],
         'xPeople': [
             ('Alias', 'TEXT', {'LENGTH': 8}),
@@ -239,7 +255,7 @@ def bootstrapper():
         ],
         'xReleases': [
             'Date Planned',
-            'Type'
+            'Type',
             'Window Start',
             'Window End',
             'LOB',
@@ -253,6 +269,12 @@ def bootstrapper():
             ('Alias', 'TEXT', {'LENGTH': 40}),
             ('Application', 'NUMERIC'),
             ('AIT Number', 'NUMERIC'),
+            ('Approvals', 'GRID', {'XPATH': 'xApprovals', 'ROWS': 1}),
+            (
+                'Capabilities',
+                'GRID',
+                {'XPATH': 'xCapabilities', 'RENAME': {''}},
+            ),
         ],
         'xTables': [
             {
@@ -265,11 +287,7 @@ def bootstrapper():
                 'SCHEMA': 'Callables',
                 'XREF': 'xCallables',
             },
-            {
-                'PATH': '/CORE/REGISTRY/IAM',
-                'SCHEMA': 'IAM',
-                'XREF': 'xIAM',
-            },
+            {'PATH': '/CORE/REGISTRY/IAM', 'SCHEMA': 'IAM', 'XREF': 'xIAM'},
             {
                 'PATH': '/CORE/REGISTRY/xSchemas',
                 'SCHEMA': 'xSchemas',
@@ -280,35 +298,15 @@ def bootstrapper():
                 'SCHEMA': 'Repos',
                 'XREF': 'xRepos',
             },
-            {
-                'PATH': '/ORG/People',
-                'SCHEMA': 'People',
-                'XREF': 'xPeople',
-            },
-            {
-                'PATH': '/ORG/BOW',
-                'SCHEMA': 'BOW',
-                'XREF': 'xBOW',
-            },
-            {
-                'PATH': '/ORG/Funding',
-                'SCHEMA': 'Funding',
-                'XREF': 'xFunding',
-            },
-            {
-                'PATH': '/ORG/P2P',
-                'SCHEMA': 'P2P',
-                'XREF': 'xP2P',
-            },
-            {
-                'PATH': '/ORG/Metrics',
-                'SCHEMA': 'Metrics',
-                'XREF': 'xMetrics',
-            },
+            {'PATH': '/ORG/People', 'SCHEMA': 'People', 'XREF': 'xPeople'},
+            {'PATH': '/ORG/BOW', 'SCHEMA': 'BOW', 'XREF': 'xBOW'},
+            {'PATH': '/ORG/Funding', 'SCHEMA': 'Funding', 'XREF': 'xFunding'},
+            {'PATH': '/ORG/P2P', 'SCHEMA': 'P2P', 'XREF': 'xP2P'},
+            {'PATH': '/ORG/Metrics', 'SCHEMA': 'Metrics', 'XREF': 'xMetrics'},
             {
                 'PATH': '/ORG/Bookmarks',
                 'SCHEMA': 'Bookmarks',
-                'XREF': 'xBookmarks'
+                'XREF': 'xBookmarks',
             },
             {
                 'PATH': '/PLATFORMS/Applications',
@@ -320,13 +318,9 @@ def bootstrapper():
                 'SCHEMA': 'Products',
                 'XREF': 'xProducts',
             },
+            {'PATH': '/PLATFORMS/APLS', 'SCHEMA': 'APL', 'XREF': 'xAPL'},
             {
-                'PATH': '/PLATFORMS/APLS',
-                'SCHEMA': 'APL',
-                'XREF': 'xAPL',
-            },
-            {
-                'PATH': '/PLATFORMS/Capabilities',
+                'PATH': '/PLATFORMS/APL Capability',
                 'SCHEMA': 'Capabilities',
                 'XREF': 'xCapabilities',
             },
@@ -363,9 +357,9 @@ def bootstrapper():
             {
                 'PATH': '/PLATFORMS/Taxonomies',
                 'SCHEMA': 'Taxonomy',
-                'XREF': 'xTaxonomies'
+                'XREF': 'xTaxonomies',
             },
-        ]
+        ],
     }
 
 
