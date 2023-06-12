@@ -20,6 +20,7 @@ def main():
         'xRepos',
         'xBOW',
     ]
+    schemas = ['xBOW']
     for schema in schemas:
         xref = core['xTables'][schema]
         sch = mini_spec(xref, core)
@@ -229,8 +230,8 @@ def bootstrapper():
             'Priority',
         ],
         'xBOW': [
-            ('Parent', 'GRID', {'XPATH': 'xTasks', 'COLLAPSED': True}),
             ('Tasks', 'GRID', {'XPATH': 'xTasks'}),
+            ('Parent', 'GRID', {'XPATH': 'xTasks', 'COLLAPSED': True}),
         ],
         'xPeople': [
             ('Alias', 'TEXT', {'LENGTH': 8}),
