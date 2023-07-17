@@ -3,35 +3,34 @@ import re
 
 
 def main():
-    core = bootstrapper()
-    core['xTables'] = {}
-    schemas = core.keys()
-    for schema in schemas:
-        xsch = core.get(schema)
-        xref = field_refs(xsch)
-        core['xTables'][schema] = xref
+    config = bootstrapper()
+    mini = micro_to_mini('xBOW', config)
+    dumper(mini)
 
-    for schema in schemas:
-        xref = core['xTables'][schema]
-        sch = mini_spec(xref, core)
-        # dumper(sch)
-        normalized = []
-        count = 1
-        for fld in sorted(sch, key=lambda x: x.get('sort_order') or 0):
-            if (fld.get('collapsed') or
+
+def micro_to_mini(schema, config=None):
+    if not config:
+        config = bootstrapper()
+    xref = config['xTables'][schema]
+    sch = mini_spec(xref, config)
+    # dumper(sch)
+    normalized = []
+    count = 1
+    for fld in sorted(sch, key=lambda x: x.get('sort_order') or 0):
+        if (fld.get('collapsed') or
                 fld.get('rows', 0) == 1) and fld.get('fields'):
-                for nested in fld['fields']:
-                    nested['sort_order'] = count
-                    normalized.append(nested)
-                    count += 1
-            else:
-                fld['sort_order'] = count
-                normalized.append(fld)
+            for nested in fld['fields']:
+                nested['sort_order'] = count
+                normalized.append(nested)
                 count += 1
-        if len(normalized):
-            mini = minimized(normalized)
-            dumper(mini)
-        # input('Press any key to continue')
+        else:
+            fld['sort_order'] = count
+            normalized.append(fld)
+            count += 1
+
+    if not len(normalized):
+        raise ValueError(f'Schema definition not constructed for ${schema}')
+    return minimized(normalized)
 
 
 def minimized(schema):
@@ -133,7 +132,7 @@ def uri_validator(uri):
 
 
 def bootstrapper():
-    return {
+    config = {
         'xMappers': {
             'TEXT': mini_text,
             'JSON': mini_text,
@@ -459,6 +458,14 @@ def bootstrapper():
             },
         ],
     }
+    config['xTables'] = {}
+    schemas = config.keys()
+    for schema in schemas:
+        xsch = config.get(schema)
+        xref = field_refs(xsch)
+        config['xTables'][schema] = xref
+
+    return config
 
 
 main()
