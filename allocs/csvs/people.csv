@@ -1,0 +1,12 @@
+resource,funding,priority,car
+r01,160,1,car1
+r02,140,2,car2
+r03,160,1,car3
+r04,50,2,car4
+r05,50,2,car5
+r06,50,3,car5
+r07,50,1,car1
+r08,50,5,car1
+r09,160,1,car6
+r10,160,1,car6
+r11,160,1,car6

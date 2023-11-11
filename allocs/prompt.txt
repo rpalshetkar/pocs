@@ -1,0 +1,32 @@
+Projects dataframe is this format
+
+project,funding,car1,car2,car3,car4,car5,car6,
+p1,         100,0.30,0.30,0.40,0.00,0.00,0.00,
+p2,          50,0.00,0.00,0.40,0.40,0.00,0.20,
+p3,          20,0.00,0.30,0.30,0.20,0.20,0.00,
+p4,          50,0.00,0.30,0.40,0.50,0.00,0.50,
+
+People dataframe is this below format
+
+resource,funding,priority,  car
+r1,          160,       1, car1 
+r2,          140,       2, car2 
+r3,          160,       1, car3 
+r4,           50,       2, car4 
+r5,           50,       2, car5 
+r6,           50,       3, car5 
+r7,           50,       1, car1 
+r8,           50,       5, car1 
+
+So p1 project can choose the people only in car1 and car2 and car3 as per these table
+resource in the car could be allocated to project which has car allocation
+Need to generate optimal person to project allocation. 
+Write python program to do this with optimized allocation 
+strategy within funding dollars. 
+
+once done show
+
+project to people allocation show total sum per project
+resource to project allocation show total sum per people
+car to projects allocation show total sum per car
+projects to car allocation show total sum per project
