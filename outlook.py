@@ -69,24 +69,30 @@ class OutlookMessageListener:
 
     cleanse_addr = lambda addr: ";".join(address.strip().replace("#", "") for address in addr.split(";"))
     cleanse = lambda x: re.sub(r"^[:a-Z]", "", x)
+    cleanse_alpha = lambda x: re.sub(r"^[a-Z]", "", x)
 
     def extract_msg(self, item):
         msg = {
-            "Time": item.ReceivedTime,
-            "From": item.SenderName,
-            "To": self.cleanse_addr(item.To), 
-            "CC": self.cleanse_addr(item.CC),
-            "Subject": self.cleanse(item.Subject)
+            "time": item.ReceivedTime,
+            "from": item.SenderName,
+            "to": self.cleanse_addr(item.To), 
+            "cc": self.cleanse_addr(item.CC),
         }
+        subject = item.Subject
+        if re.match(r"^(RE|FW):", subject):
+            subject = re.sub(r"^(RE|FW):", "", subject).strip()
+            msg["is_reply"] = True
+        msg["subject"] = self.cleanse(subject)
+
         sender = self.namespace.CreateRecipient(item.SenderName)
         address_type = sender.AddressEntry.AddressEntryUserType
         if address_type == 0:  # olExchangeUserAddressEntry
             exchange_user = sender.GetExchangeUser()
             if exchange_user is not None:
-                msg["Title"] = exchange_user.JobTitle
-                msg["Department"] = exchange_user.Department
+                msg["title"] = exchange_user.JobTitle
+                msg["dept"] = exchange_user.Department
         elif address_type == 10:  # olSmtpAddressEntry
-            msg["SMTP"] = sender.Address
+            msg["smtp"] = sender.Address
         return msg
 
     def check_unanswered_messages(self, minutes, folder):
@@ -99,12 +105,12 @@ class OutlookMessageListener:
                 for item in root_items:
                     if item.ReceivedTime <= current_time - datetime.timedelta(minutes=minutes):
                         if not item.Categories:  # Check if the message has not been responded to
-                            print(f"Important message "{item.Subject}" has not been responded to for {minutes} minutes.")
+                            print(f'Important message "{item.Subject}" has not been responded to for {minutes} minutes.')
 
     def traverse_folders(self, minutes, folder):
         self.check_unanswered_messages(minutes, folder)
         if folder.Folders.Count > 0:
-            for subfolder in folder.Folders:
+            for subfolder in folder.Folder:
                 self.traverse_folders(minutes, subfolder)
 
 
