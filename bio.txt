@@ -1,55 +1,46 @@
 I am Ratnadeep Palshetkar AKA Pally. I am part of FICC Macro Technology, supporting macro lines of businesses such as
-Rates, Financing, FX, LCT, and Commodities. 
-
-The team streamlines the technology offerings for FICC Macro domains like eTrading, Risk/PL/Pricing and enterprise reporting
+Rates, Financing, FX, LCT, and Commodities. The team streamlines the technology offerings for FICC Macro domains like eTrading, Risk/PL/Pricing and enterprise reporting
 
 Over the past eight years in my role, the Macro organization has undergone
-significant transformation. We have focused on consolidation, breaking silos,
-and building strong horizontal foundations. Front office engagement has
-improved, We have played huge role where business ROI and
-efficiencies have improved. We are close to 90 people strong across six
-countries, supporting business revenue of close to ~1B across 12 countries. 
+significant transformation. We have focused on consolidation, breaking LOB and regional silos
+and building strong horizontal foundations. We have played huge role where business ROI and efficiencies have improved where we are delivering technology better, simpler and cheaper. 
+
+We are close to 90 people strong across six countries, supporting business revenue of close to ~1B across 12 countries. 
 
 I was born in a lovely village nestled midway between Mumbai and Goa. I couldn't
-escape my parents and they followed me every day to the school as my primary school teachers 
+escape my parents at home and they followed me every day to the school as my primary school teachers 
 where I was under their constant watch.
 
-Electricity was novelty at my place during those times. Lantern-Light
-Dinner/homework was daily ritual till | moved to Mumbai for senior school and
+Electricity was novelty at my place during those times. Lantern-Light Dinner/homework was daily ritual till | moved to Mumbai for senior school and
 I did my graduation from IT Mumbai.
 
-LEARNT - "Follow the light. Appreciate it more when you have experienced the
-dark"
+LEARNT - "Follow the light. Appreciate it more when you have experienced the dark"
 
 My career choice could have been different...I had won best actor in dramatics competition
 during last year of my graduation in IIT and suddenly had this itch 
 to pursue career in acting; One of my critical close friend made me aware of the Tom Cruise looks 
 and Amitabh Bacchan acting to get to the top.
 
-LEARNT - "Be self-assure and realistic. Have good advisors/critics with you
-always though you can be your best critic"
+LEARNT - "Be self-assure and realistic. Always have good advisors/open critics with you though you can be your best critic"
 
-My 25 years of career have been quite diverse in terms of location and the firms
-I have worked for. 
+My 25 years of career have been quite diverse in terms of location and the firms I have worked for. 
 
 I started my career at Citigroup's offshore development
 center in Mumbai, then moved to Citibank Tokyo to support their Fixed
 Income/Equity Derivatives desk. I loved being jack of everything, did every job
-possible like Unix SA/DBA/developer/BA/production support. Did truncate
-entire database two three times accidently (no change MRA restrictions and
-releaes were every day if not every few hours), wasn't found and I had all nighters
-and morning was peaceful back to BAU. Those days 'Issue was not an issue till found and your boss
-is given head up the problem you have created'
+possible like Unix SA/DBA/developer/BA/PM/MAPS. Had truncated entire production database two times accidently (those days, no change MRA restrictions and
+releaes were every day if not every few hours), wasn't found and I had all nighter; and morning was peaceful back to BAU. 
+Those days 'Issue was not an issue till found'
 
 LEARNT - "During early phase in your career, get more exposed to the different
 areas/system problems, Just do anything which comes your way, have quick wins in your new role and zero in
 on what your comfort zone would be for next few years and be the best in it. As you show that hunger
 and curiocity to learn, you will break things/fail, but be the expert to recover
-responsibly. Every failure is great learning"
+responsibly and make sure you don't give shocks to your bosses. Every failure is great learning"
 
 Post Salomon it was Lehman brothers. I was going to quit within a week due to altercation 
 with the head trader til| was told by my bosses that I was mainly hired to handle him 
-because no one in tech could do it. The same trader offered me a trading job, but 6/7 screens just
+because no one in tech handle him. Maybe my thick skin was known to them. The same trader offered me a trading job, but 6/7 screens just
 overwhelmed me and I just loved solving technology problems.
 
 LEARNT - "Have good bosses around you who you can talk to openly about anything so that you
@@ -69,24 +60,23 @@ your name pops up in the bosses head. Keep these connections live even
 fi you separate ways. Bosses love to work with the devil they know than god
 they don't. PS: Grass is not always that greener on other side"
 
-It has been great journy so far being in right place at the right time with right people with immense trust placed by SLT and business. 
+It has been great journey so far being in right place at the right time with right people with immense trust placed by SLT/team and the business. 
 I was fortunate to have good hands on bosses to work for who you can learn from
-with continuous open feeback loop and open mind and no words minced and we were
+with continuous open feeback loop and open mind with no words minced. We were
 in sync around what could move the needle for the organization and it just was tied with my passions.
 
 Thinking about it, I just kept on sailing through the comfort zone within FICC. But
-I do like making my world better/more automated/no-code. When you have good
-support structure and team who is creative, innovative and likes being
-challenged it does give me opportunity to expand my comfort zone. 
+I did/do like making my world better/more automated/no-code. When you have good
+support structure and team who is creative, innovative and like to like being
+challenged, opportunities just open up to expand that comfort zone. 
 
-Behind what I am today I have support structure back home who really leave me
-alone to follow my passions which forunately don't intersect with my family's which saves
-them from my unsolicited advices. It helps because our passions don't intersect much for me to
-offer any unsolicited advice. 
+Behind what I am today I have support structure of three women back home who really leave me
+alone to follow my passions which forunately don't intersect with theirs which saves
+them from my unsolicited advices. 
 
 My wife Anita loves cooking and feeding us. She makes one of the best Chicken
 sandwiches, Tom Yum Spaghetti and Spicy kingfish. We know each other since 2nd
-grade at school. She left her law profession once we got married and moved to
+grade from school. She left her law profession once we got married and moved to
 Tokyo though continues to practice those skills at home where I haven't won
 single argument. Anita was taught by my mother during school days and that continues
 till date. 
@@ -94,39 +84,37 @@ till date.
 My elder daughter Tanvi who was born in Tokyo, loves playing piano, learning Cantonese and is our bargain
 shopper. Younger daughter Vaibhavi was born in Hong Kong, is studying in her
 first year of IB, is chief editor for school English magazine, runs
-medics club and recently did her internship with SCMP (South China Morning Post). She has recently become Japanese
-anime fan and is eagerly waiting for her first visit to Tokyo and Akihabara is
-top on her list.
+medics club. She recently finished her internship with SCMP (South China Morning Post). She has recently become Japanese
+anime fan and is eagerly waiting for her first visit to Tokyo and Akihabara is top on her list.
 
 Both of my daughters share the same birthday. 
 
-My personal space once I end office, is comprised of tram journey from office to home. 
-Tram is the best place to unwind in fast paced Hong Kong. My new year resolution is to walk back
-home, start year is TBD. 
+I am in love with my own routines. They start with tram as I end my day in the office.
+Tram is the best place to start unwinding your day. 
 
 I actively code over the weekend and try new simple technologs on the block (I learnt Flutter Ul/GCP and now trying to get hands dirty on
 GenAl). 
 
-Read quite a bit of Medium articles and get overwhelmed searching
+I read quite a bit of Medium articles and get overwhelmed searching
 what is the best approach to certain problem. I do try to automate my digital life as much as possible,
 like photo organization, mail handling, personal finances or my 30 min nagging
-alarm hated by entire GMT management. For one of my app, I used Google cloud just
-for learning sake even if not required. Small POCs solving your personal
-problems are best way to learn new technologies.
+alarm hated by entire GMT management. For one of my app, I used Google cloud/AWS just for learning sake even if not required. 
+
+Small POCs solving your personal problems are best way to learn new technologies.
 
 If I am not doing two thing in parallel, I get anxious,but I choose my second target carefully where
-unfocussed attention could work. So during the weekend when I am coding, I watch
-entertaining Hindi movies. Also currently binge-watching Curb your enthusiam.
+unfocussed attention could work. So during the weekend when I am coding, I watch Hindi movies where you can pay attention for brief 1 min and you can guess the entire plot. 
+Now I am binge-watching Curb your enthusiam.
 
-Given need of personal focus, I regularly play badminton for at least 4-5 hours every week. I tried meditation but just sitting and not doing
+Given need to have some personal focus, I play badminton for at least 4-5 hours every week. I tried meditation but just sitting and not doing
 second thing in parallel couldn't cut it. 
 
 I am big foody, have sweet tooth. Beyond Anita's specialities, and anything
 Goan, I do miss my favourites from Japan; like Ninniku Tomato Spaghetti from
-Capriciossa, Spicy Chicken place under Yurakucho JR station...
+Capriciossa, Spicy Chicken place under Yurakucho JR station...Sweets just too many too count...
 
-We enjoy our frequent family visits to Goa, being captivated by its mountains, pristine beaches, rice fields, and the unique blend of cosmopolitan and village-like identity. 
-The vibrant Goan cuisine adds to the allure, making it a perfect destination for us
+We enjoy our frequent family visits to Goa, get captivated by its mountains, pristine beaches & rice fields, and unique blend of cosmopolitan plus village-like identity. 
+The vibrant Goan cuisine adds to the allure, makesit a perfect destination
 
 
 
