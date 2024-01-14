@@ -93,14 +93,11 @@ I am in love with my own routines. They start with tram as I end my day in the o
 Tram is the best place to start unwinding your day. 
 
 I actively code over the weekend and try new simple technologs on the block (I learnt Flutter Ul/GCP and now trying to get hands dirty on
-GenAl). 
+GenAl). Small POCs solving your personal problems are best way to learn new technologies.
 
-I read quite a bit of Medium articles and get overwhelmed searching
-what is the best approach to certain problem. I do try to automate my digital life as much as possible,
+I read Medium/Stackoverflow/Github a lot and get overwhelmed searching what is the best approach to certain problem. I do try to automate my digital life as much as possible, 
 like photo organization, mail handling, personal finances or my 30 min nagging
-alarm hated by entire GMT management. For one of my app, I used Google cloud/AWS just for learning sake even if not required. 
-
-Small POCs solving your personal problems are best way to learn new technologies.
+alarm which attracts unfriendly stares from GMT management and my team. For one of my app, I used Google cloud/AWS just for learning sake even if was not required. 
 
 If I am not doing two thing in parallel, I get anxious,but I choose my second target carefully where
 unfocussed attention could work. So during the weekend when I am coding, I watch Hindi movies where you can pay attention for brief 1 min and you can guess the entire plot. 
