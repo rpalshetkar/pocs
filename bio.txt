@@ -1,115 +1,208 @@
-I am Ratnadeep Palshetkar AKA Pally. I am part of FICC Macro Technology, supporting macro lines of businesses such as
-Rates, Financing, FX, LCT, and Commodities. The team streamlines the technology offerings for FICC Macro domains like eTrading, Risk/PL/Pricing and enterprise reporting
+Trick Question
+===============
+
+Reminds me of good math puzzle, in a room full of N people, find the probabability of n people sharing same birthday. 
+Few folks across GTO celebrated their birthdays over last weekend. Very rare coincidence. Guess who. 
+
+Resolutions
+===========
+
+2023 was magically too swift and seems fair to carry those recent resolutions in 2024.
+
+1. Parting ways with my beloved HK tram and choosing a brisk walk home
+
+2. Aim launching my app on the App Store, a personal project I've diligently
+worked on for years, and has been my perpetual New Year resolution.
+
+(Blame it on the evolution of new technologies and my urge to learn and force
+use it even if not required. Though the primary reason, my furious
+typing/reading and research creates the illusion of a busy weekend, sparing me
+from household chores. Who wants to be blamed for not supporting the next
+Microsoft/Apple and Tesla)
+
+3. Addressing small personal automation POCs using GenAI + RAG (Retrieval
+Augmented Generation), aiming to be 1% ready for the future of workforce.
+
+#NewYearGoals #TechAdventures
+
+
+Grateful for robust business ties demanding excellence, urging us to deliver
+simpler, better solutions. Despite challenges, trust empowers us to exceed
+expectations. These relationships are the bedrock of our commitment to
+excellence; we value their confidence. The synergy between technology and
+business has reached new heights. Open dialogues around technology limitations,
+regulatory requirements, and business opportunities are breaking barriers
+across lines of business. We're driving horizontal optimization, identifying
+synergies that contribute significantly. Notably, our strategic technology
+innovation and agile prioritization, with the right blend of quick investments,
+have played a crucial role in the record returns witnessed in the markets.
+
+
+Notes to myself - Maintain Positivity: Begin with a "can do" approach,
+reserving room for challenges without dwelling on them initially. Recruit Top
+Talent: Surround yourself with positive individuals who excel beyond your own
+abilities. Choose Direct Leaders: Opt for bosses who communicate openly and
+directly, avoiding unnecessary complexity. Anticipate Future Needs: Plan ahead
+to stay prepared for upcoming challenges and opportunities. Foster
+Self-awareness: Understand your strengths and weaknesses for continuous
+personal growth. Leverage Your Network: Identify the best advisors within your
+network for personal and professional challenges. Give First, Expect Later:
+Prioritize generosity by offering assistance before seeking reciprocation.
+Simplify Business-Tech Connections: Explain the connection between business
+goals and technology using straightforward language. Streamline Automation for
+Tedious Tasks: Ease mundane responsibilities with automation for increased
+efficiency without unnecessary complexity. Identify Talent Gaps: Recognize
+skill gaps and hire individuals for specific roles rather than creating roles
+to fit people.
+
+
+
+I am Ratnadeep Palshetkar AKA Pally. I am part of FICC Macro Technology,
+supporting macro lines of businesses such as Rates, Financing, FX, LCT, and
+Commodities. The team streamlines the technology offerings for FICC Macro
+domains like eTrading, Risk/PL/Pricing and enterprise reporting
 
 Over the past eight years in my role, the Macro organization has undergone
-significant transformation. We have focused on consolidation, breaking LOB and regional silos
-and building strong horizontal foundations. We have played huge role where business ROI and efficiencies have improved where we are delivering technology better, simpler and cheaper. 
+significant transformation. We have focused on consolidation, breaking LOB and
+regional silos and building strong horizontal foundations. We have played huge
+role where business ROI and efficiencies have improved where we are delivering
+technology better, simpler and cheaper. 
 
-We are close to 90 people strong across six countries, supporting business revenue of close to ~1B across 12 countries. 
+We are close to 90 people strong across six countries, supporting business
+revenue of close to ~1B across 12 countries. 
 
-I was born in a lovely village nestled midway between Mumbai and Goa. I couldn't
-escape my parents at home and they followed me every day to the school as my primary school teachers 
-where I was under their constant watch.
+I was born in a lovely village nestled midway between Mumbai and Goa. I
+couldn't escape my parents at home and they followed me every day to the school
+as my primary school teachers where I was under their constant watch.
 
-With lack of Electricity at home those days, Lantern-Light Dinner/homework was daily ritual till | moved to Mumbai for senior school and
-I did my graduation from IIT Mumbai.
+With lack of Electricity at home those days, Lantern-Light Dinner/homework was
+daily ritual till | moved to Mumbai for senior school and I did my graduation
+from IIT Mumbai.
 
-LEARNT - "Follow the light. Appreciate it even more if you have experienced the dark"
+LEARNT - "Follow the light. Appreciate it even more if you have experienced the
+dark"
 
-My career choice could have been different...I had won best actor in dramatics competition
-during last year of my graduation and suddenly had this itch to pursue career in acting; One of my critical close friend made me aware of the Tom Cruise looks 
-and Amitabh Bacchan acting to get to the top.
+My career choice could have been different...I had won best actor in dramatics
+competition during last year of my graduation and suddenly had this itch to
+pursue career in acting; One of my critical close friend made me aware of the
+Tom Cruise looks and Amitabh Bacchan acting to get to the top.
 
-LEARNT - "Be self-aware and realistic. Always have good advisors/open critics with you though you can be your best critic"
+LEARNT - "Be self-aware and realistic. Always have good advisors/open critics
+with you though you can be your best critic"
 
-My 25 years of career have been quite diverse in terms of location and the firms I have worked for. 
+My 25 years of career have been quite diverse in terms of location and the
+firms I have worked for. 
 
-I started my career at Citigroup's offshore development
-center in Mumbai, then moved to Citibank Tokyo to support their Fixed
-Income/Equity Derivatives desk. I loved being jack of everything, did every job
-possible like Unix SA/DBA/developer/BA/PM/MAPS. Had truncated entire production database two times accidently (those days, no change MRA restrictions and
-releaes were every day if not every few hours), wasn't found and I had all nighter; and morning was peaceful back to BAU. 
-Those days 'Issue was not an issue till found'
+I started my career at Citigroup's offshore development center in Mumbai, then
+moved to Citibank Tokyo to support their Fixed Income/Equity Derivatives desk.
+I loved being jack of everything, did every job possible like Unix
+SA/DBA/developer/BA/PM/MAPS. Had truncated entire production database two times
+accidently (those days, no change MRA restrictions and releaes were every day
+if not every few hours), wasn't found and I had all nighter; and morning was
+ peaceful back to BAU. Those days 'Issue was not an issue till found'
 
 LEARNT - "During early phase in your career, get more exposed to the different
-areas/system problems, Just do anything which comes your way, have quick wins in your new role and zero in
-on what your comfort zone would be for next few years and be the best in it. As you show that hunger
-and curiocity to learn, you will break things/fail. Be the expert to recover
-responsibly. Make sure you don't give shocks to your bosses. Every failure is great learning"
+areas/system problems, Just do anything which comes your way, have quick wins
+in your new role and zero in on what your comfort zone would be for next few
+years and be the best in it. As you show that hunger and curiocity to learn,
+you will break things/fail. Be the expert to recover responsibly. Make sure you
+don't give shocks to your bosses. Every failure is great learning"
 
-Post Salomon it was Lehman brothers. I was going to quit within a week due to altercation 
-with the head trader til| was told by my bosses that I was mainly hired to handle him 
-because no one in tech handle him. My thick skin was famously known to my boss. The same trader offered me a trading job, but 6/7 monitors just
-overwhelmed me and I just loved solving technology problems.
+Post Salomon it was Lehman brothers. I was going to quit within a week due to
+altercation with the head trader til| was told by my bosses that I was mainly
+hired to handle him because no one in tech handle him. My thick skin was
+famously known to my boss. The same trader offered me a trading job, but 6/7
+monitors just overwhelmed me and I just loved solving technology problems.
 
-LEARNT - "Have good bosses around you who you can talk to openly about anything so that you
-don't take rash decisions. Understand your client challenges and their user
-experience expectations and work with them. PS: In the hindsight though, I could have at least done trading for 1/2 months and come back to tech"
+LEARNT - "Have good bosses around you who you can talk to openly about anything
+so that you don't take rash decisions. Understand your client challenges and
+their user experience expectations and work with them. PS: In the hindsight
+though, I could have at least done trading for 1/2 months and come back to
+tech"
 
-I was in Tokyo for close to 10 years and Merrill came calling for HK opportunity to form team helping the
-expansion of LCT desk which was getting newly established. Suraj was one of the
-interviewers and was too kind to ask any C/C++ questions to a Perl programmer. Or maybe I marketed myself about all the stories
-around how I could be jack of everything. After 3 years in ML, I moved to Singapore and had short stints within CS and JPM. 
+I was in Tokyo for close to 10 years and Merrill came calling for HK
+opportunity to form team helping the expansion of LCT desk which was getting
+newly established. Suraj was one of the interviewers and was too kind to ask
+any C/C++ questions to a Perl programmer. Or maybe I marketed myself about all
+the stories around how I could be jack of everything. After 3 years in ML, I
+moved to Singapore and had short stints within CS and JPM. 
 
-I returned to Hong Kong when Suraj offered me an opportunity to lead LCT for Asia and I rejoined. 
+I returned to Hong Kong when Suraj offered me an opportunity to lead LCT for
+Asia and I rejoined. 
 
-LEARNT - "Never burn bridges in any org so that you can get rehired for that niche which
-you have chosen carefully where you have established yourselves. Be that special to have only
-your name pops up in the boss's head. Keep these connections live even
-if you part ways. Bosses love to work with the devil they know than god
-they don't. PS: Grass is not always that greener on other side"
+LEARNT - "Never burn bridges in any org so that you can get rehired for that
+niche which you have chosen carefully where you have established yourselves. Be
+that special to have only your name pops up in the boss's head. Keep these
+connections live even if you part ways. Bosses love to work with the devil they
+know than god they don't. PS: Grass is not always that greener on other side"
 
-It has been great journey so far being in right place at the right time with right people with immense trust placed by SLT/team and the business. 
-I was fortunate to have good hands on bosses to work for who you can learn from
-with continuous feeback loop with open mind and no words minced. We were
-in sync around what could move the needle for the organization and it just was tied with my passions.
+It has been great journey so far being in right place at the right time with
+right people with immense trust placed by SLT/team and the business. I was
+fortunate to have good hands on bosses to work for who you can learn from with
+continuous feeback loop with open mind and no words minced. We were in sync
+around what could move the needle for the organization and it just was tied
+with my passions.
 
-Thinking about it, I just kept on sailing through the comfort zone within FICC. But
-I did/do like making my world better/more automated/no-code. When you have good
-support structure and team who is creative, innovative and challenges like to like
-, opportunities just open up to expand that comfort zone. 
+Thinking about it, I just kept on sailing through the comfort zone within FICC.
+But I did/do like making my world better/more automated/no-code. When you have
+good support structure and team who is creative, innovative and challenges like
+to like , opportunities just open up to expand that comfort zone. 
 
-Behind the person and professional, I am today I have support structure of three ladies back home who really leave me
-alone to follow my passions which forunately don't intersect with theirs which saves
-them from my unsolicited advices. 
+Behind the person and professional, I am today I have support structure of
+three ladies back home who really leave me alone to follow my passions which
+forunately don't intersect with theirs which saves them from my unsolicited
+advices. 
 
 My wife Anita loves cooking and feeding us. She makes one of the best Chicken
 sandwiches, Tom Yum Spaghetti and Spicy kingfish. We know each other since 2nd
 grade from school. She left her law profession once we got married and moved to
-Tokyo though continues to practice those skills at home where I haven't won
-a single argument. Anita was taught by my mother during school days and that continues
-till date. 
+Tokyo though continues to practice those skills at home where I haven't won a
+single argument. Anita was taught by my mother during school days and that
+continues till date. 
 
-My elder daughter Tanvi who was born in Tokyo, loves playing piano, learning Cantonese and is our bargain
-shopper. Younger daughter Vaibhavi was born in Hong Kong, is studying in her
-first year of IB, is chief editor for school English magazine, runs
-medics club. She recently finished her internship with SCMP (South China Morning Post). She has recently become Japanese
-anime fan and is eagerly waiting for her first visit to Tokyo and Akihabara is top on her list.
+My elder daughter Tanvi who was born in Tokyo, loves playing piano, learning
+Cantonese and is our bargain shopper. Younger daughter Vaibhavi was born in
+Hong Kong, is studying in her first year of IB, is chief editor for school
+English magazine, runs medics club. She recently finished her internship with
+SCMP (South China Morning Post). She has recently become Japanese anime fan and
+is eagerly waiting for her first visit to Tokyo and Akihabara is top on her
+list.
 
 Both of my daughters share the same birthday. 
 
-I am in love with my own routines. They start with tram as I end my day in the office. Tram is the best place to start unwinding your day. 
+I am in love with my own routines. They start with tram as I end my day in the
+office. Tram is the best place to start unwinding your day. 
 
-I actively code over the weekend and try new simple technologs on the block (I learnt Flutter Ul/GCP and now trying to get hands dirty on
-GenAl). Small POCs solving your personal problems are best way to learn new technologies.
+I actively code over the weekend and try new simple technologs on the block (I
+learnt Flutter Ul/GCP and now trying to get hands dirty on GenAl). Small POCs
+solving your personal problems are best way to learn new technologies.
 
-I read Medium/Stackoverflow/Github a lot and get overwhelmed searching what is the best approach to certain problem. I do try to automate my digital life as much as possible, 
-like photo organization, mail handling, personal finances or my 30 min nagging
-alarm which attracts unfriendly stares from GMT management and my team. For one of my app, I used Google cloud/AWS just for learning sake even if was not required. 
+I read Medium/Stackoverflow/Github a lot and get overwhelmed searching what is
+the best approach to certain problem. I do try to automate my digital life as
+much as possible, like photo organization, mail handling, personal finances or
+my 30 min nagging alarm which attracts unfriendly stares from GMT management
+and my team. For one of my app, I used Google cloud/AWS just for learning sake
+even if was not required. 
 
-If I am not doing two thing in parallel, I get anxious,but I choose my second target carefully where
-unfocussed attention could work. So during the weekend when I am coding, I watch Hindi movies where you can pay attention for brief 1 min and you can guess the entire plot. 
-Now I am binge-watching Curb your enthusiam.
+If I am not doing two thing in parallel, I get anxious,but I choose my second
+target carefully where unfocussed attention could work. So during the weekend
+when I am coding, I watch Hindi movies where you can pay attention for brief 1
+min and you can guess the entire plot. Now I am binge-watching Curb your
+enthusiam.
 
-Given need to have some personal focus, I play badminton for at least 4-5 hours every week. I tried meditation but just sitting and not doing
-second thing in parallel couldn't cut it. 
+Given need to have some personal focus, I play badminton for at least 4-5 hours
+every week. I tried meditation but just sitting and not doing second thing in
+parallel couldn't cut it. 
 
 I am big foody, have sweet tooth. Beyond Anita's specialities, and anything
 Goan, I do miss my favourites from Japan; like Ninniku Tomato Spaghetti from
-Capriciossa, Spicy Chicken place under Yurakucho JR station...Sweets just too many too count...
+Capriciossa, Spicy Chicken place under Yurakucho JR station...Sweets just too
+many too count...
 
-We enjoy our frequent family visits to Goa, get captivated by its mountains, pristine beaches & rice fields, and unique blend of cosmopolitan plus village-like identity. 
-The vibrant Goan cuisine adds to the allure, makesit a perfect destination
+We enjoy our frequent family visits to Goa, get captivated by its mountains,
+pristine beaches & rice fields, and unique blend of cosmopolitan plus
+village-like identity. The vibrant Goan cuisine adds to the allure, makesit a
+perfect destination
 
 
 
@@ -121,7 +214,8 @@ there. I am big fan of streaming services and struggle with optimizing time
 given so spoiled with choices. ChatGPT is helping quite a bit where you can
 send the list of your favorites and it can give good suggestions. Now serially
 watching Curb your Enthusiasm. Also now onto some audiobooks when Igrant the
-permission to the road for me to walk on IloveeatingI ambigfoody,havesweettooth.
+permission to the road for me to walk on IloveeatingI
+ambigfoody,havesweettooth.
 Myfavoritefood;Anita'sChickensandwiches,TomYumSpaghetti and Spicy kingfish;
 Anything Goan (Goa is my hideaway. Idon't miss visiting Goa every year at any
 cost); And Japan - Capriciossa Tomato Garlic Spaghetti &Spicy Chicken and
@@ -132,11 +226,11 @@ Tsukune under Yura
 
 
 
-with you. Spend some time to
-understand what moves the needle for them and be there with them"
+with you. Spend some time to understand what moves the needle for them and be
+there with them"
 
-Suraj decided to take the same risk with me again and I got back to HK. This has
-been the longest inning ever for ne during my professional journey.
+Suraj decided to take the same risk with me again and I got back to HK. This
+has been the longest inning ever for ne during my professional journey.
 
 Learnt; Find good bosses to work for who fight for you. They shield your
 weaknesses/stretch you to get setter/and you are learning via continuous
@@ -162,22 +256,21 @@ they don't. PS: Grass is not always that greener on other side....
 
 
 
-I have learned the importance of having a great support
-structure, having deep understanding business roadmap and importance of planning
-fo, having childlike curiocity,
-hunger of being better and continuously improving what you have built, finding
-your niche
+I have learned the importance of having a great support structure, having deep
+understanding business roadmap and importance of planning fo, having childlike
+curiocity, hunger of being better and continuously improving what you have
+built, finding your niche
 
-It is importNot starting coding until I
-understand the desired outcome. It's important to seek input from subject matter
-experts and find a unique and impactful role within the organization. By
-remaining open and observant, unexpected opportunities can arise.
+It is importNot starting coding until I understand the desired outcome. It's
+important to seek input from subject matter experts and find a unique and
+impactful role within the organization. By remaining open and observant,
+unexpected opportunities can arise.
 
 
 I later joined Salomon Brothers, where we accomplished the integration of
-derivatives within a few months. I also worked at Lehman Brothers before joining
-Merrill Lynch in Hong Kong. After three years at Merrill Lynch, I moved to
-Singapore and had stints at Credit Suisse and JPMorgan.
+derivatives within a few months. I also worked at Lehman Brothers before
+joining Merrill Lynch in Hong Kong. After three years at Merrill Lynch, I moved
+to Singapore and had stints at Credit Suisse and JPMorgan.
 
 
 
@@ -203,24 +296,24 @@ levels.
 
 
 
-I am known as Pally acronymed from my long Indian name Ratnadeep Palshetkar. I am
-part of FICC Macro Technology which enables macro lines of businesses(Rates,
-Financing, FX, LCT and Commodities) and contribut into Risk/Ul &Trade Horizontal
-foundations. My current role focusses on streamlining technology offering for
-FICC Macro eTrading, Risk/PL/Pricing and front office sourcing for enterprise
-downstream. We help to drive product anc business expansion for across 1
-countries within Asia.
+I am known as Pally acronymed from my long Indian name Ratnadeep Palshetkar. I
+am part of FICC Macro Technology which enables macro lines of businesses(Rates,
+Financing, FX, LCT and Commodities) and contribut into Risk/Ul &Trade
+Horizontal foundations. My current role focusses on streamlining technology
+offering for FICC Macro eTrading, Risk/PL/Pricing and front office sourcing for
+enterprise downstream. We help to drive product anc business expansion for
+across 1 countries within Asia.
 
-My 25 years of career have been quite diverse in terms of location and the firms
-I have worked for.
+My 25 years of career have been quite diverse in terms of location and the
+firms I have worked for.
 
 Iwas born in a lovely village nestled midway between Mumbai and Goa. Icouldn't
 escape my parents and they followed me every day to the school and they
 continued to do that as my primary school teachers where Iwas unde their
 constant watch. Electricity was novelty in India during those times.
-Lantern-Light Dinner/homework was daily ritual till | moved to Mumbai for senior
-school and Idid my graduation from IT Mumbai. lesson Learnt; Follow the light.
-You appreciate it more when you have experienced the dark.
+Lantern-Light Dinner/homework was daily ritual till | moved to Mumbai for
+senior school and Idid my graduation from IT Mumbai. lesson Learnt; Follow the
+light. You appreciate it more when you have experienced the dark.
 
 Through campus, I landed a job at Citigroup offshore development center in
 Mumbai which took me to Citibank Tokyo to support their Fixed income/equity
@@ -229,69 +322,65 @@ that thick with little experience very little experience dealing with trading
 but it got easier where Icould be unix SA/DBA/developer/BA/production support
 and jack of everything. 
 
-That was the start of my career journey within Markets
-FO technology. Moved to Salomon Brothers as Citibank/Travellers merged and we
-had three people in the team in tech who did whole derivatives integration
-within few months.... 
+That was the start of my career journey within Markets FO technology. Moved to
+Salomon Brothers as Citibank/Travellers merged and we had three people in the
+team in tech who did whole derivatives integration within few months.... 
 
-(Almost no regulation/production access/freedom to release
-daily/or running production jobs from dev environment just did wonders and 
-I was lucky Inever got caught where two three times Iwiped entire production database
-and SOD was like nothing happened except me sleeping in the office post
-herculean recoveries and napping next day. Those were the days where it was
-issue is not an issue till it is found. 
+(Almost no regulation/production access/freedom to release daily/or running
+production jobs from dev environment just did wonders and I was lucky Inever
+got caught where two three times Iwiped entire production database and SOD was
+like nothing happened except me sleeping in the office post herculean
+recoveries and napping next day. Those were the days where it was issue is not
+an issue till it is found. 
 
-Lesson Learnt; Know the pains of your
-client well and think how they might be thinking in their head fi systems don't
-work. And then know what you are doing really really well so that you can
-recover quickly fi you break systems. 
+Lesson Learnt; Know the pains of your client well and think how they might be
+thinking in their head fi systems don't work. And then know what you are doing
+really really well so that you can recover quickly fi you break systems. 
 
  
- Suraj decided to take the same risk with me again and I got back to HK. This has
- been the longest inning ever for ne during my professional journey.
+ Suraj decided to take the same risk with me again and I got back to HK. This
+ has been the longest inning ever for ne during my professional journey.
 
  Learnt; Find good bosses to work for who fight for you. They shield your
  weaknesses/stretch you to get setter/and you are learning via continuous
  feedback loop. More brutal feedback even better. They market your strengths
- more which eclipses those small black dots you may be working on getting better
- at. And most importantly never burn bridges...Keep these connections live even
- fi you separate ways. Bosses love to work with the devil they know than god
- they don't. PS: Grass is not always that greener on other side.... 
+ more which eclipses those small black dots you may be working on getting
+ better at. And most importantly never burn bridges...Keep these connections
+ live even fi you separate ways. Bosses love to work with the devil they know
+ than god they don't. PS: Grass is not always that greener on other side.... 
 
  My Journey so far; Timing just worked out. 
 
- The year I joined BIB and CPRT were the biggest
- things within global markets. Asia complexities got known globally. Finally
- Quartz investment started showing tremendous potential. It tested my team, we
- were also fortunate to hire good talent across all levels. Over the course of
- last 8 years, organization has been transforming. My role also expanded where
- we now have close to 90 people across 6 countries supporting ~1B revenue across
- 12 countries. We found opportunities via consolidation/breaking LOB and
- regional silos and running horizontally. 
+ The year I joined BIB and CPRT were the biggest things within global markets.
+ Asia complexities got known globally. Finally Quartz investment started
+ showing tremendous potential. It tested my team, we were also fortunate to
+ hire good talent across all levels. Over the course of last 8 years,
+ organization has been transforming. My role also expanded where we now have
+ close to 90 people across 6 countries supporting ~1B revenue across 12
+ countries. We found opportunities via consolidation/breaking LOB and regional
+ silos and running horizontally. 
 
- Thin LOB verticals but strong core
- horizontal foundation is what we are pushing for us to be
- simpler/better/cheaper. Front office engagement has never been this better. We
- defined what the team should look like and created roles, identified skills
- gaps and brought in right people into right role to make us whole complementing
- each other to deliver as team. IBOR/CPRT/CIRT/BIB/P2-GRETVenues list goes on
- but business started seeing ROl and efficiencies. Lesson Learnt: 
+ Thin LOB verticals but strong core horizontal foundation is what we are
+ pushing for us to be simpler/better/cheaper. Front office engagement has never
+ been this better. We defined what the team should look like and created roles,
+ identified skills gaps and brought in right people into right role to make us
+ whole complementing each other to deliver as team.
+ IBOR/CPRT/CIRT/BIB/P2-GRETVenues list goes on but business started seeing ROl
+ and efficiencies. Lesson Learnt: 
 
- Have a support
- structure you trust. Understand strategy/roadmap and whys, Understand the
- business. Be childlike curious. Don't start coding til you understand how
- business would see the end outcome of your development. Bother the SMEs til you
- know it. Re your place ni the org; Find where you would be unique, most
- valuable and impactful, where you see the gap. Find that right sweet spot. The
- organization is diverse/broad and fi you know that unique power of yours, keep
- your eyes and ears wide open and you wil see opportunities you never thought
- about. Has been great ride so far. 
+ Have a support structure you trust. Understand strategy/roadmap and whys,
+ Understand the business. Be childlike curious. Don't start coding til you
+ understand how business would see the end outcome of your development. Bother
+ the SMEs til you know it. Re your place ni the org; Find where you would be
+ unique, most valuable and impactful, where you see the gap. Find that right
+ sweet spot. The organization is diverse/broad and fi you know that unique
+ power of yours, keep your eyes and ears wide open and you wil see
+ opportunities you never thought about. Has been great ride so far. 
 
- I have been trusted by global and regional
- SLT for not dropping so many balls and balancing quick as well as long terms
- wins. I have been in the right place at right time with right people with
- immense trust placed by SLT and business. 
+ I have been trusted by global and regional SLT for not dropping so many balls
+ and balancing quick as well as long terms wins. I have been in the right place
+ at right time with right people with immense trust placed by SLT and business. 
 
- If not for some of those short
- term/emotional decisions along the way, I would have had my sabbatical earlier.
+ If not for some of those short term/emotional decisions along the way, I would
+ have had my sabbatical earlier.
 
