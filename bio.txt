@@ -1,3 +1,55 @@
+ I’m Pally, which is a moniker derived from my actual name, Ratnadeep Palshetkar. I am a part of FICC Macro Technology, which enables macro lines of businesses such as Rates, Financing, FX, LCT, and Commodities. I contribute to Risk/UI & Trade Horizontal foundations. My current role focuses on streamlining technology offerings for FICC Macro Trading, Risk/PL/Pricing, and front office sourcing for enterprise downstream. We help drive product and business expansion across 11 countries in Asia.
+
+I was born in a lovely village nestled midway between Mumbai and Goa. Electricity was a novelty in India during those times, and lantern-lit dinners and homework were a daily ritual for me. That was, until I moved to Mumbai to attend IIT (Indian Institute of Technlogy) Bombay.
+
+Lesson learned: Follow the light. You’ll appreciate it more when you’ve known the dark.
+
+It’s astonishing to think how my career could have been so different. During my last year at IIT, I won the best actor award in a dramatics competition and suddenly felt like I should pursue a career in acting. However, one of my support structures and advisors made me aware of Tom Cruise’s existence.
+
+Lesson learned: Be self-assured and realistic. Having good advisors/critics are a necessity in times of uncertainty.
+
+My 25-year career has spanned a diverse range of locations and firms. Through campus placements, I landed a job at Citigroup's offshore development center in Mumbai, which later took me to Citibank Tokyo to support their Fixed Income/Equity Derivatives desk as a single-person team. It was daunting, as my experience with trading was limited, but I quickly adapted to being a Unix SA/DBA/developer/BA/production support.
+
+I later moved to Salomon Brothers when Citibank and Travellers merged. Back then, there were almost no regulations, production access, or freedom to release daily or run production jobs from the development environment. It was a time when issues were not considered issues until they were found. I was lucky that I never got caught, even though there were a few instances where I accidentally wiped the entire production database and had to work tirelessly to recover it.
+
+Lesson learned: Know your clients and work with an empathetic approach when systems don’t work. Also, have a sound understanding of what you're doing so that you can quickly recover if you break the systems.
+
+After Salomon Brothers, I joined Lehman Brothers. Initially, I was planning to quit within a week due to an altercation with the head trader. However, I was informed by my bosses that I was primarily hired to handle him because no one else in the tech team could. (The same trader even offered me a trader job, but the thought of managing 6 or 7 screens overwhelmed me.)
+
+I spent close to 10 years in Tokyo, working for Salomon Brothers, Citigroup, and Lehman Brothers, before Merrill Lynch offered me an opportunity in Hong Kong to form a team that would assist in the expansion of the LCT desk. Suraj was one of the interviewers, and it was kind of him not to ask any C/C++ questions to a Perl programmer. Or maybe I managed to distract him with talks of how I could be a jack of all trades. After three years at Merrill Lynch, I moved to Singapore and had stints at Credit Suisse and JPMorgan.
+
+Suraj decided to take the same risk with me again and I got back to HK. 
+
+Lesson learned: Find good bosses who’ll fight for you. They stretch you to the limit and help you learn via continuous feedback loops. The more brutal the feedback, the better. They’ll market your strengths and temper your weaknesses. Most importantly, never burn bridges. Keep those connections alive even if you part ways. Bosses prefer working with someone familiar rather than someone unknown.
+
+Timing worked out perfectly. The year I joined BIB and CPRT coincided with significant developments in global markets. Asia's complexities became known worldwide. Quartz investment started showing tremendous potential, testing my team. We were fortunate to hire talented individuals at all levels.
+
+Over the past eight years, the organisation has undergone immense transformation. My role expanded, and now we have nearly 90 people across six countries supporting approximately $1 billion in revenue across 12 countries. We identified opportunities through consolidation, breaking down LOB and regional silos, and adopting a horizontal approach. We aim for thin LOB verticals with a strong core horizontal foundation to become simpler, better, and more cost-effective. We defined the ideal team structure, created roles, identified skill gaps, and brought in the right people to deliver as a team. Front office engagement has never been better.
+
+IBOR, CPRT, CIRT, BIB, P2-GRET, Venues — the list goes on, but the business started seeing returns on investment and efficiencies.
+
+Lesson learned: Have a support structure you trust. Understand the strategy, roadmap, and reasons behind them. Grasp the business context. Approach your work with childlike curiosity. Don't start coding until you understand how the business will perceive the end outcome of your development. Engage with subject matter until you fully comprehend it. Find where you can contribute impactfully. The organisation is diverse and broad; recognise your unique strengths, stay attentive, and you’ll uncover unseen opportunities. 
+
+It has been a fantastic ride so far. Global and regional senior leadership teams have trusted me not to drop the ball and achieve both short-term and long-term wins. I've been in the right place at the right time with the right people, and the SLT and business have placed immense trust in me.
+
+I do feel like I've been sailing within my comfort zone in FICC. However, I enjoy making my world better and more automated without coding. When you have a support system that is creative, innovative, and embraces challenges, it gives me the opportunity to expand my comfort zone.
+
+Behind who I am today, there are three women who give me the space to pursue my passions without interference. My wife Anita (who loves cooking and taking care of us) has known me since second grade. She left her profession as a lawyer after we got married, but continues to practice her skills at home, winning all the family disputes. Tanvi, my eldest, loves playing the piano and is fluent at bargaining in Cantonese. She was born in Tokyo. Vaibhavi, born in Hong Kong, is a jack of all trades. She is the Editor-in-Chief of the school arts magazine, runs the Medics Club, interned with SCMP’s Young Post, and is a huge anime fan. She’s keen on spending her time on the crane machines at Akihabara when we visit Tokyo. Fun fact: both of my daughters share the same birthday.
+
+My personal space once I leave the office is comprised of the tram journey from work to home. The tram is the best place to unwind after a hectic day. (My New Year's resolution is to walk back home, but the start date is yet to be determined.) 
+
+When it comes to wellbeing, I make it a point to play badminton for at least 3–4 hours every week. I've tried meditation, but simply sitting still and not doing another activity doesn't work for me. I'm considering trying yoga, as it might help me in that aspect.
+
+I'm a big fan of streaming services, but I struggle to optimise my time because I'm spoiled for choice. ChatGPT has been quite helpful with providing recommendations. Currently, I'm serially watching "Curb Your Enthusiasm." I've also started listening to audiobooks while granting myself permission to walk and listen.
+
+I love eating and consider myself a big foodie with a sweet tooth. Some of my favorite foods include Anita's chicken sandwiches, Tom Yum spaghetti, spicy kingfish, anything Goan (I’m not one to ever miss an annual visit to Goa), and Japanese dishes like Capricciosa tomato garlic spaghetti, spicy chicken, tsukune under Yurakucho Subway, and anything at Gonpachi (the Kill Bill place).
+
+I actively code over the weekend and try out new technologies. I recently learned Flutter UI and GCP, and now I'm delving into GenAl.
+
+I've read quite a few Medium articles and I often get overwhelmed, constantly searching for the best approach to certain problems. It bores me tremendously to click the same button twice to do the same thing. For example, I dislike setting up multiple alarms manually on my iPhone, so I created an Apple Automator script to automate the process. I try to automate various aspects of my digital life, such as photo organisation, mail handling, and personal finances. I even built an iOS app for tracking net worth, although it never made it to the shelves of the App Store. I used Google Cloud for learning purposes, even though it wasn't necessary for my app.
+
+Now I'm faced with a new challenge: figuring out how to send all my personal documents to GenAl so that I can ask questions about them. If I'm not multitasking, it makes me anxious. However, I choose my second task carefully, ensuring that I can handle it with unfocused attention. Thus, while I'm coding, I enjoy watching Hindi movies.o
+
 Trick Question
 ===============
 
