@@ -1,0 +1,20 @@
+Rule|Queue|Priority|Date|Sender|DG|Title|Department|To|CC|Subject|Action|Args
+MD|A|1||||Managing Director||me@bofa.com|||MARK|MUST
+MD|A|1||||Managing Director|||me@bofa.com||MARK|MUST
+MD|A|1||||Managing Director|||||MARK|MUST
+METO|A|1||||||me@bofa.com|||MARK|MUST
+MECC|A|2|||||||me@bofa.com||MARK|WATCH
+SLT|A|1|||DMSLT||||||MARK|MUST
+SLT|A|1|||BMSLT||||||MARK|MUST
+SLT|A|1|||RNCSLT||||||MARK|MUST
+SLT|A|1|||PHSLT||||||MARK|MUST
+SLT|A|1|||LQSLT||||||MARK|MUST
+SLT|A|1|||SRSLT||||||MARK|MUST
+SLT|A|1|||DDSLT||||||MARK|MUST
+SLT|A|1|||RPSLT||||||MARK|MUST
+ORG|A|3|||FMTA||||||MARK|WATCH
+KB|M|1||Bofa-|||||||FILE|RESEARCH
+SPAM|X|1||FMTA|||||||FILE|Deleted Items/SPAM
+SPAM|X|1||quartz.|||||||FILE|Deleted Items/SPAM
+SPAM|X|1||bob.|||||||FILE|Deleted Items/SPAM
+SNZ|Z|1|2Y||||||||ARCHIVE|SNOOZED
