@@ -99,3 +99,76 @@ def main():
 
 
 main()
+
+
+def validate_url(**kwargs):
+    uri = kwargs.get('uri')
+    protocol = kwargs.get('protocol')
+    stem = kwargs.get('stem')
+    if protocol and stem:
+        uri = ':'.join([protocol, stem])
+    elif uri:
+        protocol, stem = uri.split(':')
+    assert stem and protocol, 'Protocol and/or Stem missing'
+    protocols = DNS.enums('PROTOCOLS')
+    assert protocol in protocols, f'Protocol {protocol} not in {protocols}'
+    kwargs['uri'] = uri
+
+
+class Repo:
+
+    def __init__(self, uri):
+        return uri
+
+
+class DNS:
+
+    @classmethod
+    def enums(cls, enum, **kwargs):
+        if enum == 'PROTOCOLS':
+            return [
+                'qzt', 'txf', 'http', 'csv', 'xls', 'pd', 'obs', 'rra', 'kudu',
+                'dict', 'list'
+            ]
+        else:
+            return kwargs
+
+    def repo(self, **kwargs):
+        validate_url(**kwargs)
+        return Repo(kwargs.get('uri'))
+
+    def pivot(self, **kwargs):
+        pass
+
+    def find(self, **kwargs):
+        pass
+
+    def first(self, **kwargs):
+        pass
+
+    def top(self, **kwargs):
+        pass
+
+    def join(self, **kwargs):
+        pass
+
+    def mailer(self, **kwargs):
+        pass
+
+    def sftp(self, **kwargs):
+        pass
+
+    def dq(self, **kwargs):
+        pass
+
+    def xform(self, from_='qzt', to='pd'):
+        pass
+
+    def xlation_map(self, **kwargs):
+        pass
+
+    def xlate(self, to='human', row=None, col=None):
+        pass
+
+    def beautify(self, **kwargs):
+        pass
