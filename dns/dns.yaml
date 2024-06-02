@@ -1,0 +1,242 @@
+openapi: 3.0.0
+info:
+  title: Example API
+  version: 1.0.0
+
+components:
+  schemas:
+    xEntity:
+      type: string
+      enum: ['xEnumeration', 'xPeople', 'xACL', 'xRole', 'xCallbacks']
+    Entity:
+      type: object
+      properties:
+        metadata:
+          type: object
+          properties:
+            uri:
+              type: string
+            protocol:
+              type: string
+            stem:
+              type: string
+            roles:
+              type: array
+              items:
+                type: string
+            callbacks:
+              type: array
+              items:
+                type: string
+            xlations:
+              type: array
+              items:
+                type: string
+        methods:
+          type: object
+          properties:
+            list:
+              $ref: '#/components/schemas/MethodList'
+            insert:
+              $ref: '#/components/schemas/MethodInsert'
+            delete:
+              $ref: '#/components/schemas/MethodDelete'
+            update:
+              $ref: '#/components/schemas/MethodUpdate'
+            where:
+              $ref: '#/components/schemas/WhereClause'
+            aggregate:
+              $ref: '#/components/schemas/MethodAggregate'
+            import:
+              $ref: '#/components/schemas/MethodImport'
+            export:
+              $ref: '#/components/schemas/MethodExport'
+            xlation:
+              $ref: '#/components/schemas/MethodXlation'
+            sort:
+              $ref: '#/components/schemas/MethodSort'
+    MethodList:
+      type: object
+      properties:
+        description:
+          type: string
+          example: "Gives list of rows of object type"
+        response:
+          type: array
+          items:
+            type: object
+    MethodInsert:
+      type: object
+      properties:
+        description:
+          type: string
+          example: "Takes an object id or a key or list of these and returns objects inserted"
+        response:
+          type: array
+          items:
+            type: object
+    MethodDelete:
+      type: object
+      properties:
+        description:
+          type: string
+          example: "Takes an object id or a key or list of these and returns objects deleted"
+        response:
+          type: array
+          items:
+            type: object
+    MethodUpdate:
+      type: object
+      properties:
+        description:
+          type: string
+          example: "Takes an object id or a key or list of these and returns objects updated"
+        response:
+          type: array
+          items:
+            type: object
+    MethodAggregate:
+      type: object
+      properties:
+        description:
+          type: string
+          example: "Aggregation takes list of columns, margins also list of columns to create subtotals"
+        response:
+          type: array
+          items:
+            type: object
+    MethodImport:
+      type: object
+      properties:
+        description:
+          type: string
+          example: "Imports the list from a given format into the internal structure"
+        response:
+          type: array
+          items:
+            type: object
+    MethodExport:
+      type: object
+      properties:
+        description:
+          type: string
+          example: "Exports the list into given format"
+        response:
+          type: array
+          items:
+            type: object
+    MethodXlation:
+      type: object
+      properties:
+        description:
+          type: string
+          example: "Takes translation map header parameter => changes the header based on columns; Takes translation map value parameter => takes a row and changes columns or adds columns"
+        response:
+          type: array
+          items:
+            type: object
+    MethodSort:
+      type: object
+      properties:
+        description:
+          type: string
+          example: "Sorts based on dictionary keys or columns"
+        response:
+          type: array
+          items:
+            type: object
+    WhereClause:
+      type: object
+      properties:
+        and:
+          type: array
+          items:
+            $ref: '#/components/schemas/Condition'
+        or:
+          type: array
+          items:
+            $ref: '#/components/schemas/Condition'
+    Condition:
+      type: object
+      properties:
+        field:
+          type: string
+        operator:
+          type: string
+          enum: ['in', 'not', 'gt', 'gte', 'lt', 'lte', 'eq', 'neq', 'starts_with', 'ends_with', 'matches', '<', '>', '=', '!=']
+        value:
+          oneOf:
+            - type: string
+            - type: integer
+            - type: array
+              items:
+                oneOf:
+                  - type: string
+                  - type: integer
+
+paths:
+  /entities:
+    get:
+      summary: List all entities
+      responses:
+        '200':
+          description: A list of entities
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Entity'
+    post:
+      summary: Create a new entity
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Entity'
+      responses:
+        '201':
+          description: Entity created
+  /entities/{id}:
+    get:
+      summary: Get an entity by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: An entity
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Entity'
+    put:
+      summary: Update an entity by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Entity'
+      responses:
+        '200':
+          description: Entity updated
+    delete:
+      summary: Delete an entity by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Entity deleted
